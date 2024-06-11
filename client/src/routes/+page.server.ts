@@ -11,7 +11,7 @@ export const load: Load = async ({ fetch }) => {
     };
   } catch (er) {
     return {
-      lessons: null,
+      lessons: [],
     };
   }
 };

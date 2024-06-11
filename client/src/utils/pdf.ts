@@ -8,5 +8,15 @@ const toPDF = async (urls: string[]) => {
   const dataUrl = pdf.dataUrl();
   return dataUrl;
 };
+export const FilesToPDF = async (files: FormDataEntryValue[]) => {
+  const imageFiles = files.filter((file) => file instanceof File) as File[];
+
+  // Convert files to ArrayBuffers
+  const imageArrayBuffers = await Promise.all(
+    imageFiles.map((file) => file.arrayBuffer())
+  );
+  const pdf = await imagesToPDF(imageArrayBuffers);
+  return pdf.dataUrl();
+};
 
 export default toPDF;

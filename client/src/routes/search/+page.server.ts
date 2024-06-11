@@ -19,7 +19,7 @@ export const load: Load = async ({ fetch, url }) => {
   } catch (er) {
     return {
       props: {
-        lessons: null,
+        lessons: [],
       },
     };
   }

@@ -11,7 +11,7 @@
 
 <div class="w-full relative h-full root">
   <Nav />
-  <div class="page w-full h-full max-w-7xl mx-auto">
+  <div class="page w-full h-full max-w-7xl mx-auto max-md:px-2">
     <slot />
   </div>
 </div>
