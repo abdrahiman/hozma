@@ -1,7 +1,7 @@
 import axios, { type AxiosRequestConfig } from "axios";
 // import toast from "react-hot-toast";
 
-export const API_HOST = "http://localhost:5000/";
+export const API_HOST = "https://studynotes-ayoi.onrender.com";
 
 // let showError = (message: string) => {
 //   toast.error(message);
